@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: "cinema";
+    src: url(Fontes/FilmLetters.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "cinema2";
+    src: url(Fontes/Cinematic-Language.ttf) format(truetype);
+}
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +22,15 @@ body{
 }
 
 /*Menu de navegação*/
+h1{
+    background-color: #141313;
+    text-align: center;
+    font-family: "cinema";
+    color: yellow;
+    font-size: 100px;
+    font-weight: normal;
+}
+
 header .login{
     display: flex;
     justify-content: space-around;
@@ -97,7 +115,67 @@ nav ul li a:hover{
 
 .banner{
     width: 100%; /*Que a imagem ocupe 100% do site*/
+    min-height: 300px;
     justify-content: center; /*Centralizado no eixo X*/
     align-items: center; /*Centralizado no eixo Y*/
     border-bottom: 1px solid white; /*Coloca borda embaixo*/
+}
+
+/*Conteúdo Principal do site (main)*/
+.titulo{
+    text-align: center;
+    padding: 1rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: .5rem 0 2rem ;
+}
+
+.filmes-galeria{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 180px;
+    cursor: pointer;
+    border: 1px solid rgba(70, 68, 68, 0.397) ;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.filmes-galeria:hover{
+    transform: translateY(-6px); /*Faz com que o elemento levante 6px para cima quando o mouse estiver nele*/
+}
+
+.sinopses{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.911);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.sinopses:hover{
+    opacity: 1;
+}
+
+.bi-info-circle-fill{
+    font-size: 30px;
 }
