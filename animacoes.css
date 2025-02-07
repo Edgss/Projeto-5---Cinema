@@ -1,0 +1,4 @@
+@keyframes login {
+    0%{background-position-x: 0%;}
+    100%{background-position: 400%;}
+}

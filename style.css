@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black; /*Cor de fundo do site*/
+    color: white; /*Cor da fonte*/
+    font-family: "Poppins", serif; /*Estilo da fonte*/
+}
+
+/*Menu de navegação*/
+header .login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem; /*Espaçamento interno*/
+    background-color: #141313; /*Cor do menu*/
+}
+
+input[type=text]{
+    height: 40px; /*Tamanho da caixa do texto*/
+    border-radius: 5px; /*Cantos arredondados*/
+    border: none; /*Sem borda*/
+    padding: 0 .8rem; /*Espaçamento interno*/
+}
+
+.botao-entrar{
+    display: flex;
+    height: 40px; /*Altura do "botão"*/
+    width: 100px; /*Largura do botão*/
+    justify-content: center; /*Alinhamento eixo x*/
+    align-items: center; /*Alinhamento eixo y*/
+    border-radius: 10px;  /*Cantos arredondados*/
+    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc); /*Cor de fundo*/
+    background-size: 400% 100%; /*Posicionamento da cor de fundo, eixo X e Y*/
+    animation: login 15s ease infinite alternate; /*Animações: nome, duração até fim, estilo, duração da animação e que seja alternativa*/ 
+    cursor: pointer;
+}
+
+.botao-login{
+    color: white; /*Cor do texto*/
+    text-decoration: none; /*Sem decorações no texto*/
+}
+
+
+
+nav{
+    background-color: #141313; /*Cor do menu*/
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap; /*Faz com que a linha se quebre de acordo com o tamanho da janela do navegador*/
+    justify-content: center; /*Alinha o conteudo no centro no eixo X*/
+    align-items: center; /*Alinha no centro do eixo Y*/
+    list-style: none; /*Tira a todos os estilos da lista, nesse caso, a bolinha*/
+}
+
+nav ul li a{
+    display: block;
+    color: white; /*Cor dos links*/
+    text-decoration: none; /*Tira decoração do link (sublinhado)*/
+    padding: 30px 30px; /*Coloca um espaçamento interno no elemento*/
+    transition: .3s; /*Para que no hover não fique tão seca a animação de background*/
+}
+
+/*Hover: quando o mouse estiver posicionado em cima*/
+nav ul li a:hover{
+    color: yellow; /*Muda a cor do texto quando o mouse está em cima*/
+}
+
+
+.drop{
+    position: relative;
+}
+
+.drop .menu{
+    position: absolute; /*Faz com que sobreponha o elemento*/
+    background-color: #292626; /*Cor do fundo*/
+    width: 100%; /*Largura total*/
+    overflow: hidden; /*Faz com que não vaze o conteúdo*/
+    height: 0; /*Altura do menu*/
+    transition: .5s; /*Transição para o dropdown*/
+}
+
+.drop .menu a{
+    padding: 15px 35px; /*Espaçamento interno do link do menudropdown*/
+}
+
+.drop:hover .menu{
+    height: 380px; /*Altura da lista do dropdown*/
+}
+
+.banner{
+    width: 100%; /*Que a imagem ocupe 100% do site*/
+    justify-content: center; /*Centralizado no eixo X*/
+    align-items: center; /*Centralizado no eixo Y*/
+    border-bottom: 1px solid white; /*Coloca borda embaixo*/
+}
