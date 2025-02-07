@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylepb.css">
+</head>
+<body>
+    <div class="pagamento">
+        <div class="dados">
+            <form>
+                <label for="nome">Nome Completo: </label><br>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+
+                <label for="text">E-mail:</label><br>            
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br>
+
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" required placeholder="Crie uma senha"> <br>
+
+                <label for="senha">Confirme sua senha:</label><br>
+                <input type="password" id="senha" required placeholder="Confirme sua senha"><br>
+
+                <label for="cpf">CPF: </label><br>
+                <input type="number" id="CPF" name="cpf" required placeholder="XXX.XXX.XXX-XX"><br>
+
+                <label for="nascimento">Data de nascimento: </label><br>
+                <input type="date" id="date" name="data" required><br>
+
+                <label for="telefone"></label>
+                <input type="number" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+                <button>enviar</button>
+            </form>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plano</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Plano Básico</td>
+                    <td>1</td>
+                    <td>R$14,90</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td colspan="2">R$14,90</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
