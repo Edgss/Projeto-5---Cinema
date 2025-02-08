@@ -7,12 +7,12 @@
 }
 
 body{
-    background-color: rgb(65, 75, 117);
+    background-color: white;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 3rem;
     font-family: "Poppins", serif;
 }
 
@@ -28,13 +28,79 @@ body{
     color: black;
     height: 500px;
     width: 400px;
-    padding: 1rem;
     border-radius: 5px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.548);
+}
+
+label{
+    font-size: 15px;
+}
+
+label[for="text"], label[for="nome"],label[for="senha"],label[for="cpf"],label[for="nascimento"], label[for="telefone"]{
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 16px;
 }
 
 input[type="text"]{
     height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    padding: .5rem;
 }
+
+input[type="email"]{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+        padding: .5rem;
+}
+
+input[type="password"]{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    padding: .5rem;
+}
+
+input[type="number"]{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+        padding: .5rem;
+}
+
+input[type="date"]{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    text-align: center;
+}
+
+.pagamento-basico{
+        display: flex;
+        height: 40px; 
+        width: 100px;
+        justify-content: center; 
+        align-items: center;
+        border-radius: 10px; 
+        background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc); 
+        background-size: 400% 100%;
+        animation: login 15s ease infinite alternate;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.658);
+}
+
+.pagamento
+
 table{
     border-collapse: collapse;
     background-color: white;
