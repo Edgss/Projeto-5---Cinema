@@ -120,6 +120,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-width: 500px;
     max-width: 1250px;
     min-height: 370px;
@@ -149,6 +150,11 @@ img{
     padding: .5rem 0 2rem ;
 }
 
+.titulo-filme{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .filmes-galeria{
     position: relative;
     overflow: hidden;
