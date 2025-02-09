@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="./animacoes.css">
+    <link rel="shortcut icon" href="../imagens/user.png" type="image/x-icon">
+</head>
+<body>
+    <div class="cadastro">
+    <h2>Insira seus dados</h2>
+</div>
+
+    <div class="dados">
+        <!--Info Nome-->
+        <form>
+            <label for="nome">Nome: </label><br>
+            <input type="text" id="nome" name="1nome" placeholder="digite aqui seu nome" required>
+        <!--Info Sobrenome-->
+            <label for="sobrenome">Sobrenome: </label><br>
+            <input type="text" id="sobrenome" name="1sobrenome" placeholder="digite aqui seu sobrenome" required>
+        <!--Info Email-->
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="1email" placeholder="digite aqui seu email" required>
+
+
+            <label for="cpf">CPF: </label><br>
+            <input type="number" id="cpf" name="1cpf" placeholder="digite aqui o cpf" required>
+         <!--Info Telefone-->
+
+            <label for="telefone">Numero de telefone: </label><br>
+            <input type="number" id="fone" name="1fone" placeholder="digite aqui o telefone" required>
+        <!--Info Idade-->
+            <label for="nascimento">Data de Nascimento</label><br>
+            <input type="date" id="date" name="1date">
+        <!--Senha-->
+
+                <label for="senha">Insira sua senha: </label><br>
+                <input type="password" id="senha" name="1senha" required>
+
+        <!--Info Genero-->
+                <h5>Gênero</h5>
+            <input type="radio" value="masculino" id="genero1" name="opcao">
+            <label for="genero">Masculino</label><br>
+
+            <input type="radio" value="feminino" id="genero2" name="opcao">
+            <label for="genero">Feminino</label><br>
+
+
+            <h5>Por onde você nos descobriu ?</h5>
+            <select name="info" id="descobriu">
+                <option value="insta">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="tiktok">TikTok</option>
+                <option value="google">Google</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <input type="submit" value="Enviar" class="botao" formaction="../login/login.html">
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    background-image: url(https://images6.alphacoders.com/846/846724.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    width: 16rem;
+    height: 60%;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.527);
+    color: white;
+}
+
+input[type="text"],input[type="password"]{
+    font-size: 1rem;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    padding: 3px;
+    box-sizing: border-box;
+    padding-right: 1.3rem;
+}
+
+.input i{
+    position: absolute;
+    right: 17%;
+    color: #948e8e;
+    font-size: .8rem;
+}
+
+.input2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input2 input{
+    position: relative;
+    padding: 3px;
+    height: 100%;
+    width: 70%;
+    padding-right: 1.3rem;
+    box-sizing: border-box;
+}
+
+.input2 i{
+    position: absolute;
+    right: 17%;
+    font-size: .8rem;
+    color: #948e8e;
+}
+
+.botao{
+    margin-top: 1rem;
+    padding: .2rem;
+    width: 6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #021859;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.267);
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #0b1944;
+}
+
+label{
+    font-size: 1rem;
+    margin-bottom: .2rem;
+    margin-top: .2rem;
+}
+
+p{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+p>a{
+    margin-left: .1rem;
+    text-decoration: none;
+    font-size: .6rem;
+}
+
+
+.cadastro1{
+    font-size: .8rem;
+    background-image:linear-gradient(45deg, #0339A6, #1e52bb, rgb(70, 169, 182));
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: cadastro1 8s linear infinite;
+}
+
+
+

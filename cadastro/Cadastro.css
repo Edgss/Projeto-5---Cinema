@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images6.alphacoders.com/846/846724.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cadastro h2{
+    font-size: 1.4rem;
+    background-image:linear-gradient(45deg, #0339A6,#021859, #1e52bb, rgb(70, 169, 182));
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: cadastro 8s linear infinite alternate;
+    text-align: center;
+    margin: .6rem 0;
+
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    background-color: rgba(0, 0, 0, 0.829);
+    min-width: 260px;
+    max-width: 300px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.432);
+}
+
+
+input::placeholder{
+    font-size: .8rem;
+}
+
+label{
+    font-size: .8rem;
+    color: white;
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="email"]{
+    display: flex;
+    font-size: .9rem;
+    height: 1.5rem;
+    padding: 1px 3px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+}
+input[type="password"]{
+    display: flex;
+    font-size: 1rem;
+    height: 1.6rem;
+    padding: 1px 3px;
+    width: 60%;
+    max-width: 150px;
+    outline: none;
+}
+
+input[type="number"], input[type="date"]{
+    display: flex;
+    font-size: .8rem;
+    height: 1.5rem;
+    padding: 1px 1px;
+    width: 70%;
+    max-width: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 3px;
+    padding: 1px 3px;
+}
+input[type="number"]::placeholder{
+    font-size: .7rem;
+}
+
+h5{
+    display: flex;
+    margin: .5rem 0 .1rem;
+    font-size: .8rem;
+    color: white;
+}
+
+input[type="radio"] {
+    justify-content: flex-start;
+    transform: scale(0.7);
+    vertical-align: middle;
+}
+
+label[for="genero"]{
+    font-size: .9rem;
+}
+
+select{
+    display: flex;
+    height: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-bottom: .5rem;
+}
+
+.botao{
+    width: 100%;
+    padding: .2rem;
+    background-color: #021859;
+    border-radius: 3px;
+    color: white;
+    border: black;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #0b1944;
+}

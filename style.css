@@ -23,16 +23,25 @@ body{
 
 /*Menu de navegação*/
 h1{
-    background-color: #141313;
-    text-align: center;
     font-family: "cinema";
-    color: yellow;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: normal;
+    text-align: center;
+    background-image: linear-gradient(45deg, yellow, orange, red);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: cinema 20s ease infinite alternate;
+}
+
+@keyframes cinema{
+    0%{background-position-x: 0%;}
+    100%{background-position: 400%;}
 }
 header{
     min-width: 500px;
     max-width: 1400px;
+    background-color: #141313;
 }
 header .login{
     display: flex;
@@ -85,8 +94,24 @@ nav ul li a{
     display: block;
     color: white; /*Cor dos links*/
     text-decoration: none; /*Tira decoração do link (sublinhado)*/
-    padding: 30px 30px; /*Coloca um espaçamento interno no elemento*/
+    padding: 20px 30px; /*Coloca um espaçamento interno no elemento*/
     transition: .3s; /*Para que no hover não fique tão seca a animação de background*/
+    position: relative;
+}
+
+.barras::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.barras:hover::after{
+    width: 100%;
 }
 
 /*Hover: quando o mouse estiver posicionado em cima*/
@@ -261,3 +286,83 @@ img{
     color: white;
     text-decoration: none;
 }
+
+/*Redes Sociais*/
+footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+footer h3{
+    padding: .5rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.redes ul li{
+    display: flex;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.redes ul li:hover{
+    width: 100px;
+}
+
+.redes ul li:hover::before{
+    opacity: 1;
+}
+
+.redes span{
+    position: absolute;
+}
+
+.redes ul li .icon{
+    font-size: 30px;
+    transition: .2s;
+}
+
+.redes ul li .bi-instagram {color: rgb(194, 42, 67);}
+.redes ul li .bi-github {color: #333333;} 
+.redes ul li .bi-linkedin {color: #0077B5;}
+.redes ul li .bi-coin{color: #FFD700;}
+
+.redes ul li:hover .icon{
+    transform: scale(0);
+}
+
+.redes ul li .text{
+    font-size: 15px;
+    transform: scale(0);
+    font-weight: bold;
+}
+
+.redes ul li:hover .text{
+    transform: scale(1);
+    transition: .2s;
+    transition-delay: .1s;
+    color: white;
+}
+
+.redes ul li::before{
+    content: "";
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    border-radius: 60px;
+}
+
+.redes ul li.instagram::before{background-image: linear-gradient(45deg,#fb3997, #fecf12);}
+.redes ul li.github::before{background-image: linear-gradient(45deg,#333333, #6e5494);}
+.redes ul li.linkedin::before{background-image: linear-gradient(45deg,#09c5ff, #0986ff);}
+.redes ul li.coin::before{background-image: linear-gradient(45deg, #FFD700, #DAA520);}
