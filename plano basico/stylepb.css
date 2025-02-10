@@ -92,7 +92,7 @@ input[type="date"]{
         justify-content: center; 
         align-items: center;
         border-radius: 10px; 
-        background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc); 
+        background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #135b64); 
         background-size: 400% 100%;
         animation: login 15s ease infinite alternate;
         cursor: pointer;
@@ -161,7 +161,7 @@ label[for="pix"],label[for="credito"],label[for="paypal"]{
 }
 
 .botao-compra{
-    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc); 
+    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #135b64);
     background-size: 400% 100%;
     animation: login 15s ease infinite alternate;
     border-radius: 5px;

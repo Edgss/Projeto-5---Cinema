@@ -5,10 +5,6 @@
     src: url(Fontes/FilmLetters.ttf) format(truetype);
 }
 
-@font-face {
-    font-family: "cinema2";
-    src: url(Fontes/Cinematic-Language.ttf) format(truetype);
-}
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +23,7 @@ h1{
     font-size: 70px;
     font-weight: normal;
     text-align: center;
-    background-image: linear-gradient(45deg, #E0CF09,#E0C454, #E09B09,  #ecdc22);
+    background-image: linear-gradient(45deg, yellow, orange, red);
     background-size: 400% 100%;
     -webkit-background-clip: text;
     color: transparent;
@@ -38,9 +34,8 @@ h1{
     0%{background-position-x: 0%;}
     100%{background-position: 400%;}
 }
+
 header{
-    min-width: 500px;
-    max-width: 1400px;
     background-color: #141313;
 }
 header .login{
@@ -49,6 +44,10 @@ header .login{
     align-items: center;
     padding: 1.5rem; /*Espaçamento interno*/
     background-color: #141313; /*Cor do menu*/
+}
+
+.mini-banner{
+    height: 120px;
 }
 
 input[type=text]{
@@ -75,9 +74,6 @@ input[type=text]{
     color: white; /*Cor do texto*/
     text-decoration: none; /*Sem decorações no texto*/
 }
-
-
-
 nav{
     background-color: #141313; /*Cor do menu*/
 }
@@ -131,6 +127,15 @@ nav ul li a:hover{
     overflow: hidden; /*Faz com que não vaze o conteúdo*/
     height: 0; /*Altura do menu*/
     transition: .5s; /*Transição para o dropdown*/
+    z-index: 2;
+}
+
+.drop .menu a{
+    padding: 15px 35px; /*Espaçamento interno do link do menudropdown*/
+}
+
+.drop:hover .menu{
+    height: 380px; /*Altura da lista do dropdown*/
 }
 
 .drop .menu a{
@@ -152,19 +157,11 @@ nav ul li a:hover{
     margin: 0 auto;
 }
 
-/*Conteúdo Principal do site (main)*/
-main{
-    min-width: 500px;
-    max-width: 1400px;
-}
+/*Main*/
+
 .titulo{
     text-align: center;
     padding: 1rem;
-}
-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
 }
 
 .galeria{
@@ -173,6 +170,12 @@ img{
     justify-content: center;
     gap: 1.5rem;
     padding: .5rem 0 2rem ;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .titulo-filme{
