@@ -18,6 +18,14 @@ body{
 }
 
 /*Menu de navegação*/
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 h1{
     font-family: "cinema";
     font-size: 60px;
@@ -35,9 +43,9 @@ h1{
     100%{background-position: 400%;}
 }
 
-header .login{
+  .login{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
     align-items: center;
     background-color: #141313; /*Cor do menu*/
@@ -72,8 +80,10 @@ input[type=text]{
     color: white; /*Cor do texto*/
     text-decoration: none; /*Sem decorações no texto*/
 }
-nav{
-    background-color: #141313; /*Cor do menu*/
+nav {
+    background-color: #141313; /* Cor do menu */
+    display: flex;
+    justify-content: center; /* Centraliza o menu na tela */
 }
 
 nav ul{
@@ -82,6 +92,7 @@ nav ul{
     justify-content: center; /*Alinha o conteudo no centro no eixo X*/
     align-items: center; /*Alinha no centro do eixo Y*/
     list-style: none; /*Tira a todos os estilos da lista, nesse caso, a bolinha*/
+
 }
 
 nav ul li a{
@@ -144,19 +155,15 @@ nav ul li a:hover{
     height: 380px; /*Altura da lista do dropdown*/
 }
 
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-width: 500px;
-    max-width: 1250px;
-    min-height: 370px;
-    margin: 0 auto;
-}
 
 /*Main*/
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .titulo{
     text-align: center;
     padding: 1rem;
@@ -179,7 +186,6 @@ img{
 .titulo-filme{
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .filmes-galeria{
     position: relative;
@@ -227,7 +233,7 @@ img{
 
 
 .bi-info-circle-fill{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .planos{
@@ -263,7 +269,7 @@ img{
     align-items: center;
 }
 
-.basico:hover{transform: scale(1.02);}
+.basico:hover{transform: scale(1.02);} /*Aumenta a escala (tamanho)*/
 .mensal:hover{transform: scale(1.02);}
 .anual:hover{transform: scale(1.02);}
 .check{color:green;}
@@ -291,7 +297,7 @@ img{
 /*Redes Sociais*/
 footer{
     text-align: center;
-    padding: 1rem;
+    margin: 5rem 0 1rem 0;
 }
 
 footer h3{
@@ -336,7 +342,7 @@ footer h3{
 .redes ul li .bi-instagram {color: rgb(194, 42, 67);}
 .redes ul li .bi-github {color: #333333;} 
 .redes ul li .bi-linkedin {color: #0077B5;}
-.redes ul li .bi-coin{color: #FFD700;}
+.redes ul li .bi-coin{color: #d8b806;}
 
 .redes ul li:hover .icon{
     transform: scale(0);
@@ -355,13 +361,15 @@ footer h3{
     color: white;
 }
 
-.redes ul li::before{
-    content: "";
-    position: absolute;
-    opacity: 0;
-    inset: 0;
-    border-radius: 60px;
+/*::before serve para insetir um conteúdo extra antes do conteúdo*/
+.redes ul li::before {
+    content: "";   /* Cria um conteúdo vazio */
+    position: absolute; /* Posiciona em relação ao elemento pai */
+    opacity: 0; /* Inicialmente deixa invisivel invisível */
+    inset: 0; /* Faz com que o elemento ocupe todo o espaço do elemento pai */
+    border-radius: 60px; /* Arredonda o elemento */
 }
+
 
 .redes ul li.instagram::before{background-image: linear-gradient(45deg,#fb3997, #fecf12);}
 .redes ul li.github::before{background-image: linear-gradient(45deg,#333333, #6e5494);}
