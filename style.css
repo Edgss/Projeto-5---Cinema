@@ -20,7 +20,7 @@ body{
 /*Menu de navegação*/
 h1{
     font-family: "cinema";
-    font-size: 70px;
+    font-size: 60px;
     font-weight: normal;
     text-align: center;
     background-image: linear-gradient(45deg, yellow, orange, red);
@@ -35,15 +35,13 @@ h1{
     100%{background-position: 400%;}
 }
 
-header{
-    background-color: #141313;
-}
 header .login{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     align-items: center;
-    padding: 1.5rem; /*Espaçamento interno*/
     background-color: #141313; /*Cor do menu*/
+    padding:0 2rem;
 }
 
 .mini-banner{
@@ -64,7 +62,7 @@ input[type=text]{
     justify-content: center; /*Alinhamento eixo x*/
     align-items: center; /*Alinhamento eixo y*/
     border-radius: 10px;  /*Cantos arredondados*/
-    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc); /*Cor de fundo*/
+    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #135b64);  /*Cor de fundo*/
     background-size: 400% 100%; /*Posicionamento da cor de fundo, eixo X e Y*/
     animation: login 15s ease infinite alternate; /*Animações: nome, duração até fim, estilo, duração da animação e que seja alternativa*/ 
     cursor: pointer;
@@ -282,7 +280,7 @@ img{
     justify-content: center; 
     align-items: center; 
     border-radius: 10px; 
-    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #a5f3fc);
+    background: linear-gradient(45deg, #0f4249, #22d3ee, #0989a0, #135b64); 
     background-size: 400% 100%;
     animation: login 12s ease-in-out infinite alternate;  
     cursor: pointer;
