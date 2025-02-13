@@ -5,6 +5,7 @@
     src: url(Fontes/FilmLetters.ttf) format(truetype);
 }
 
+
 *{
     padding: 0;
     margin: 0;
@@ -151,10 +152,9 @@ nav ul li a:hover{
     padding: 15px 35px; /*Espaçamento interno do link do menudropdown*/
 }
 
-.drop:hover .menu{
-    height: 380px; /*Altura da lista do dropdown*/
+.a1:hover{
+    background-color: #1b1b1b;
 }
-
 
 /*Main*/
 main{
