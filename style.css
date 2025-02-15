@@ -169,6 +169,16 @@ main{
     padding: 1rem;
 }
 
+.clique{
+    color: white;
+}
+
+
+.clique:hover{
+    color: white;
+}
+
+
 .galeria{
     display: flex;
     flex-wrap: wrap;
