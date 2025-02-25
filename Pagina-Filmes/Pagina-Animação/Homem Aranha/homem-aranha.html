@@ -18,58 +18,115 @@
     </header>
 
     <main>
-        <div class="filme-sinopse">
-                <div class="img2"><img src="../../../Filmes/Animação/aranha.jpg"></div>
-                <div class="sinopse">
-                        <h2>Homem-Aranha no Aranhaverso</h2>
-                        <p>Miles Morales descobre que não é o único Homem-Aranha e se junta a versões alternativas do herói para salvar o multiverso de uma ameaça catastrófica.</p>
-                    <div class="aprovacao">
-                        <ul>
-                            <li>
-                                <h4>Taxa de aprovação: <span class="numero">97%</span></h4><br>
-                                <span class="barras-aprovacao"><span class="barras1"></span></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Formulario de datas e horario-->
-                    <div class="opcoes">
-                        <form >
-                            <label for="horario">Selecione a data:</label>
-                            <select name="data" id="Data">
-                                <option>10/02</option>
-                                <option>11/02</option>
-                                <option>12/02</option>
-                                <option>13/02</option>
-                                <option>14/02</option>
-                            </select>
+    <!--Div que contem todo o conteúdo da página-->
+    <div class="conteudo-filme">
 
-                            <label for="horario">Escolha o horario: </label>
-                            <select name="opções" id="opcoesdata">
-                                <option>14:30</option>
-                                <option>14:30</option>
-                                <option>14:30</option>
-                                <option>14:30</option>
-                                <option>14:30</option>
-                            </select>
-
-                            <label for="tipo">Tipo de Sessão:</label>
-                            <select name="tipo" id="tipo">
-                                <option>2D</option>
-                                <option>3D</option>
-                                <option>D-BOX</option>
-                            </select>
-
-                            <label for="legenda">Escolha o idioma:</label>
-                            <select name="legenda" id="legenda">
-                                <option>Dublado</option>
-                                <option>Legendado</option>
-                            </select>
-                        </form>
-                    </div>
-                    <button class="Ingresso">Comprar Ingresso</button>
-                </div>
+        <div class="poster">
+            <img src="../../../Filmes/Animação/aranha.jpg" alt="Homem-Aranha no Aranhaverso">
         </div>
+        <!--↑ Fim da div poster ↑-->
+            <div class="sinopse">
+                <h2>Homem-Aranha no Aranhaverso</h2>
+                <p>Miles Morales descobre que não é o único Homem-Aranha e se junta a versões alternativas do herói para salvar o multiverso de uma ameaça catastrófica.</p><br>
+                <p>Taxa de aprovação <strong>97%</strong></p>
+                <!-- ↓ Inicio da barra de aprovação ↓-->
+                 <div class="barra-aprovacao">
+                    <ul>
+                        <li>
+                            <span class="barra"><span class="barra-preenchida"></span>
+                        </li>
+                    </ul>
+                 </div>
+                 <!-- ↑ Fim da div de aprovação ↑ -->
+                 <form>
+                    <div>
+                        <label for="dia">Escolha o dia:</label>
+                        <select name="dia" id="diaFilme">
+                            <option>14/03</option>
+                            <option>14/03</option>
+                            <option>14/03</option>
+                            <option>14/03</option>
+                            <option>14/03</option>
+                        </select>
+                    </div>
 
+                    <div>
+                        <label for="dia">Escolha o horário:</label>
+                        <select name="dia" id="diaFilme">
+                            <option>14:00</option>
+                            <option>14:00</option>
+                            <option>14:00</option>
+                            <option>14:00</option>
+                            <option>14:00</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="dia">Escolha a linguagem:</label>
+                        <select name="dia" id="diaFilme">
+                            <option>Dublado</option>
+                            <option>Legendado</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="dia">Escolha o tipo:</label>
+                        <select name="dia" id="diaFilme">
+                            <option class="opcao">2D</option>
+                            <option>3D</option>
+                            <option>14/03</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="botao"><button>Comprar ingresso</button></div>
+            </div>
+            <!-- ↑ Fim da div de sinopses ↑ -->
+            <!-- ↓ Final da div do conteúdo principal ↓-->
+            </div>
+
+            <div class="avaliacoes">
+
+                <div class="usuario-comentario">
+                    <div class="nickname">
+                        <img src="../../../pngs/user.png" alt="" class="usuarios">
+                        <h4 class="nome">Usuario 1</h4>
+                    </div>
+                    <textarea name="sei la" id=""></textarea>
+                </div>
+
+                <div class="usuario-comentario">
+                    <div class="nickname">
+                      <img src="../../../pngs/user.png" alt="" class="usuarios">
+                      <h4 class="nome">Usuario 2</h4>
+                    </div>
+                    <textarea name="sei la" id=""></textarea>
+                </div>
+
+                <div class="usuario-comentario">
+                    <div class="nickname">
+                     <img src="../../../pngs/user.png" alt="" class="usuarios">
+                     <h4 class="nome">Usuario 3</h4>
+                    </div>
+                    <textarea name="sei la" id=""></textarea>
+                </div>
+
+                <div class="usuario-comentario">
+                    <div class="nickname">
+                     <img src="../../../pngs/user.png" alt="" class="usuarios">
+                     <h4 class="nome">Usuario 4</h4>
+                    </div>
+                    <textarea name="sei la" id=""></textarea>
+                </div>
+
+                <div class="usuario-comentario">
+                    <div class="nickname">
+                     <img src="../../../pngs/user.png" alt="" class="usuarios">
+                     <h4 class="nome">Usuario 5</h4>
+                    </div>
+                    <textarea name="sei la" id=""></textarea>
+                </div>
+            </div>
     </main>
 </body>
 </html>

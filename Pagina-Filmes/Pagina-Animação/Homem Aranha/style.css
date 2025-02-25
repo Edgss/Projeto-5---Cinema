@@ -10,7 +10,6 @@ body{
     font-family: "Poppins", serif;
     background-color: black;
     color: white;
-    margin: 0 auto;
 }
 
 /*menu de navegação*/
@@ -56,7 +55,6 @@ nav ul li a:hover{
     color: yellow;
 }
 
-
 .drop{
     position: relative;
 }
@@ -84,85 +82,147 @@ nav ul li a:hover{
 }
 
 /*Main*/
-main{
-    margin: 0 auto;
-}
-
-.filme-sinopse{
+.conteudo-filme{
     display: flex;
-    padding: 6rem .8rem 0rem;
-    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    padding: 3.5rem 3.5rem 0 3.5rem;
     width: 100%;
 }
 
+
+/*Imagem do poster*/
 img{
-    max-height: 400px;
-    max-width: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
+.poster{
+    min-width: 200px;
+    width: 350px;
+    max-width: 500px;
+
+    height: 345px;
+}
+
+
+/*Sinopses e barras*/
 .sinopse{
-    flex-wrap: wrap;
+    padding: 0 .7rem;
 }
 
-.numero{ margin-left: 5px;}
-
-.aprovacao ul{
-    padding: 20px 0;
-}
-
-.aprovacao ul li{
+ul{
+    margin-top: .5rem;
     list-style: none;
 }
 
-.aprovacao .barras-aprovacao{
-    display: flex;
-    height: 8px;
+.barra{
+    height: 10px;
     background-color: white;
-    border-radius: 20px;
+    display: block;
+    border-radius: 10px;
     position: relative;
-    overflow: hidden;
     max-width: 500px;
+    overflow: hidden;
 }
 
-.aprovacao > span{
+.barra > span{
+    height: 10px;
+    border-radius: 20px;
     position: absolute;
-    height: 8px;
+    background-color: rgb(173, 19, 45);
 }
 
-.favorito{
-    display: flex;
-    justify-content: space-around;
-}
-.barras1{
-    animation: aranha 3s ease;
-    background-color:  #ff4d6d;
-    width: 97%;
+.barra-preenchida{
+    width: 98%;
+    animation: barras 4s ease;
 }
 
-@keyframes aranha{
+@keyframes barras {
     0%{width: 0%;}
     100%{width: 97%;}
 }
 
-
 form{
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    justify-content: space-evenly;
+    gap: 8px;
 }
+
+label{
+    font-size: 16px;
+}
+
 select{
-    cursor: pointer;
-    width: 80px;
+    background-color: black;
+    color: white;
     height: 30px;
-    font-size: 15px;
-    background-color: #1b1a1a;
-    color: white;
     border-radius: 3px;
+    cursor: pointer;
 }
 
-option{
-    background-color: #1b1a1a;
+.botao{
+    margin-top: 5rem;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/*Avaliações users*/
+.usuario-comentario{
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    border-radius: 5px;
+    height: 300px;
+    width: 210px;
+    padding: .5rem;
+}
+.avaliacoes{
+    padding: 2rem 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/*Fotos*/
+
+.nickname{
+    display: flex;
+    padding: .5rem;
+    text-align: center;
+}
+.usuarios{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.nome{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin: 0 auto;
+}
+
+textarea{
+    width: 100%;
+    height: 210px;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    background-color: black;
+    border-radius: 5px;
+    resize: none;
+    padding: .5rem;
     color: white;
 }
-
